@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Provide Bitcoin price
+  steps:
+  - intent: get_bitcoin_price  
+  - action: action_get_bitcoin_price

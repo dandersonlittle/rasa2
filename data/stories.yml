@@ -28,3 +28,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: User asks for Bitcoin price
+  steps:
+  - intent: get_bitcoin_price
+  - action: action_get_bitcoin_price

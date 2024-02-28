@@ -89,3 +89,8 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: get_bitcoin_price
+  examples: |
+    - what is the price of bitcoin?
+    - tell me the price of bitcoin
