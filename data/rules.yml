@@ -31,3 +31,18 @@ rules:
   steps:
     - intent: ask_about_trac
     - action: utter_about_trac
+
+- rule: Inform how to buy Crown
+  steps:
+    - intent: how_to_buy_crown
+    - action: utter_how_to_buy_crown
+
+- rule: Inform how to buy Pandora
+  steps:
+    - intent: how_to_buy_pandora
+    - action: utter_how_to_buy_pandora
+
+- rule: Inform how to buy Trac
+  steps:
+    - intent: how_to_buy_trac
+    - action: utter_how_to_buy_trac

@@ -54,6 +54,24 @@ nlu:
     - Explain Trac
     - Details about Trac
 
+- intent: how_to_buy_crown
+  examples: |
+    - how can I buy Crown?
+    - what should I do if I want to buy Crown?
+    - where can I buy crown?
+
+- intent: how_to_buy_pandora
+  examples: |
+    - how can I buy Pandora?
+    - what should I do if I want to buy Pandora?
+    - where can I buy Pandora?
+
+- intent: how_to_buy_trac
+  examples: |
+    - how can I buy Trac?
+    - what should I do if I want to buy Trac?
+    - where can I buy Trac?
+
 - intent: get_bitcoin_price
   examples: |
     - what is the price of bitcoin?

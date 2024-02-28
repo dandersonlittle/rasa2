@@ -20,12 +20,19 @@ responses:
   - text: "Crown is an altcoin on the Solana network. Crown is the token for Photo Finish games, which is a virtual horseracing game with on-chain breeding and betting mechanics. Crown has parternships with NBC and the Kentucky Derby. Crown is a promising coin in the on-chain gaming world."
 
   utter_about_pandora:
-  - text: "Pandora is an altcoin on the Ethereum network. Pandora is the pioneering token behind a new NFT standard. Pandora can bought as an NFT, and can also be converted to a fungible token. The idea is that Pandora brings more liquidity to NFTs. The standard on which Pandora is created is new and promising for the NFT space."
+  - text: "Pandora is an altcoin on the Ethereum network. Pandora is the pioneering token behind a new NFT standard. Pandora can bought as an NFT, and can also be converted to a fungible token. The idea is that Pandora is the flagship product built upon a new standard which brings more liquidity to NFTs. The standard on which Pandora is created is new and promising for the NFT space."
 
   utter_about_trac:
   - text: "Trac is an ordinal inscription on the Bitcoin network. The Trac network provides a decentralized indexer which competes with the original BRC20 indexing standard. There has been controversy over the centralized entities that are indexing BRC20s. Trac aims to decentralize indexing for inscriptions on Bitcoin."
 
+  utter_how_to_buy_crown:
+  - text: "Crown is best purchased on-chain on Solana. Create a wallet on Solana--Phantom Wallet is best for beginners. Send $sol tokens to your new wallet from your preferred exchange. Orca, Jupiter, and Raydium perform the most volume of Crown. The best buying experience will be on Jupiter, which is a DEX aggregator. Go to jup.ag and you can purchase Crown there."
 
+  utter_how_to_buy_pandora:
+  - text: "Pandora is best purchased on-chain on Ethereum. Create a wallet on Ethereum--Metamask Wallet is best for beginners. Send $eth tokens to your new wallet from your preferred exchange. The best place to buy is on Uniswap. Go to app.uniswap.org and you can purchase Pandora there."
+
+  utter_how_to_buy_trac:
+  - text: "Trac is best purchased on-chain on Bitcoin. Create a wallet on Bitcoin--XVerse Wallet is best for beginners. Send $btc tokens to your new wallet from your preferred exchange. OKX (Ordinals) and Unisat perform the most volume for Trac. The best buying experience will be on OKX (ordinals), which is a OKX's DEX. Go to https://www.okx.com/web3/marketplace/inscription/ordinals/token/trac and you can purchase Trac there."
 
 session_config:
   session_expiration_time: 60
