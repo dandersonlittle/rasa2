@@ -12,11 +12,6 @@ rules:
   - intent: get_bitcoin_price  
   - action: action_get_bitcoin_price
 
-- rule: Get Bitcoin exchange volume
-  steps:
-  - intent: get_bitcoin_exchange_volume 
-  - action: action_get_bitcoin_exchange_volume
-
 - rule: Respond to inquiry about Crown
   steps:
     - intent: ask_about_crown
@@ -46,3 +41,23 @@ rules:
   steps:
     - intent: how_to_buy_trac
     - action: utter_how_to_buy_trac
+
+- rule: Get Bitcoin exchange volume
+  steps:
+  - intent: get_bitcoin_exchange_volume 
+  - action: action_get_bitcoin_exchange_volume
+
+- rule: Get Crown exchange volume
+  steps:
+  - intent: get_crown_exchange_volume 
+  - action: action_get_crown_exchange_volume
+
+- rule: Get Pandora exchange volume
+  steps:
+  - intent: get_pandora_exchange_volume 
+  - action: action_get_pandora_exchange_volume
+
+- rule: Get Trac exchange volume
+  steps:
+  - intent: get_trac_exchange_volume 
+  - action: action_get_trac_exchange_volume

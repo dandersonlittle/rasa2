@@ -48,3 +48,63 @@ class ActionGetBitcoinExchangeVolume(Action):
         
         dispatcher.utter_message(text=message)
         return []
+    
+class ActionGetCrownExchangeVolume(Action):
+    def name(self):
+        return "action_get_crown_exchange_volume"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker, domain):
+        url = f"https://api.coingecko.com/api/v3/coins/crown-by-third-time-games/tickers?order=volume_desc"
+        response = requests.get(url)
+        data = response.json()
+        
+        if 'tickers' in data:
+            exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            message = "Top exchanges for Crown by volume: \n"
+            for exchange in exchanges:
+                message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
+        else:
+            message = "Sorry, couldn't fetch Crown data."
+        
+        dispatcher.utter_message(text=message)
+        return []
+
+class ActionGetPandoraExchangeVolume(Action):
+    def name(self):
+        return "action_get_pandora_exchange_volume"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker, domain):
+        url = f"https://api.coingecko.com/api/v3/coins/pandora/tickers?order=volume_desc"
+        response = requests.get(url)
+        data = response.json()
+        
+        if 'tickers' in data:
+            exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            message = "Top exchanges for Pandora by volume: \n"
+            for exchange in exchanges:
+                message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
+        else:
+            message = "Sorry, couldn't fetch Pandora data."
+        
+        dispatcher.utter_message(text=message)
+        return []
+    
+class ActionGetTracExchangeVolume(Action):
+    def name(self):
+        return "action_get_trac_exchange_volume"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker, domain):
+        url = f"https://api.coingecko.com/api/v3/coins/trac/tickers?order=volume_desc"
+        response = requests.get(url)
+        data = response.json()
+        
+        if 'tickers' in data:
+            exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            message = "Top exchanges for Trac by volume: \n"
+            for exchange in exchanges:
+                message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
+        else:
+            message = "Sorry, couldn't fetch Trac data."
+        
+        dispatcher.utter_message(text=message)
+        return []

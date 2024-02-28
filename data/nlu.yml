@@ -82,3 +82,21 @@ nlu:
     - Show top exchanges for Bitcoin
     - Get top exchanges by volume for Bitcoin
     - Where is Bitcoin traded the most?
+
+- intent: get_crown_exchange_volume
+  examples: |
+    - Show top exchanges for Crown
+    - Get top exchanges by volume for Crown
+    - Where is Crown traded the most?
+
+- intent: get_pandora_exchange_volume
+  examples: |
+    - Show top exchanges for Pandora
+    - Get top exchanges by volume for Pandora
+    - Where is Pandora traded the most?
+
+- intent: get_trac_exchange_volume
+  examples: |
+    - Show top exchanges for Trac
+    - Get top exchanges by volume for Trac
+    - Where is Trac traded the most?

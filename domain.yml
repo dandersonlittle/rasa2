@@ -41,6 +41,9 @@ session_config:
 actions:
 - action_get_bitcoin_price
 - action_get_bitcoin_exchange_volume
+- action_get_crown_exchange_volume
+- action_get_pandora_exchange_volume
+- action_get_trac_exchange_volume
 
 
 slots:
