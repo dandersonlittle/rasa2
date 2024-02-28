@@ -8,6 +8,7 @@ intents:
   - ask_about_crown
   - ask_about_pandora
   - ask_about_trac
+  - new_to_crypto
 
 responses:
   utter_greet:
@@ -33,6 +34,9 @@ responses:
 
   utter_how_to_buy_trac:
   - text: "Trac is best purchased on-chain on Bitcoin. Create a wallet on Bitcoin--XVerse Wallet is best for beginners. Send $btc tokens to your new wallet from your preferred exchange. OKX (Ordinals) and Unisat perform the most volume for Trac. The best buying experience will be on OKX (ordinals), which is a OKX's DEX. Go to https://www.okx.com/web3/marketplace/inscription/ordinals/token/trac and you can purchase Trac there."
+
+  utter_new_to_crypto:
+  - text: "It's very exciting you want to get started using crypto! If you are in the US, the first step is to make a Coinbase account. Coinbase is the leading exchange in the US. Kraken exchange or Gemini exchange are also good options. Once you've created your exchange account and fulfilled the KYC requirements, you'll be able to bridge dollars from your bank account to the exchange to buy your first crypto. You'll be able to send your crypto from these exchanges to your on-chain mobile wallets. You should also make an X account dedicated to crypto, so you can begin exploring the social graph of Crypto Twitter!"
 
 session_config:
   session_expiration_time: 60

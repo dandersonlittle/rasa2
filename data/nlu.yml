@@ -100,3 +100,9 @@ nlu:
     - Show top exchanges for Trac
     - Get top exchanges by volume for Trac
     - Where is Trac traded the most?
+
+- intent: new_to_crypto
+  examples: |
+    - How do I get started in crypto?
+    - I am new to crypto, how should I begin?
+    - I want to buy my first crypto. 

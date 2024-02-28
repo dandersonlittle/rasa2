@@ -61,3 +61,8 @@ rules:
   steps:
   - intent: get_trac_exchange_volume 
   - action: action_get_trac_exchange_volume
+
+- rule: Onboard to crypto
+  steps:
+  - intent: new_to_crypto
+  - action: utter_new_to_crypto
