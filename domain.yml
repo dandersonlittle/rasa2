@@ -3,33 +3,29 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
   - get_bitcoin_price
   - get_exchange_volume
+  - ask_about_crown
+  - ask_about_pandora
+  - ask_about_trac
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_about_crown:
+  - text: "Crown is an altcoin on the Solana network. Crown is the token for Photo Finish games, which is a virtual horseracing game with on-chain breeding and betting mechanics. Crown has parternships with NBC and the Kentucky Derby. Crown is a promising coin in the on-chain gaming world."
+
+  utter_about_pandora:
+  - text: "Pandora is an altcoin on the Ethereum network. Pandora is the pioneering token behind a new NFT standard. Pandora can bought as an NFT, and can also be converted to a fungible token. The idea is that Pandora brings more liquidity to NFTs. The standard on which Pandora is created is new and promising for the NFT space."
+
+  utter_about_trac:
+  - text: "Trac is an ordinal inscription on the Bitcoin network. The Trac network provides a decentralized indexer which competes with the original BRC20 indexing standard. There has been controversy over the centralized entities that are indexing BRC20s. Trac aims to decentralize indexing for inscriptions on Bitcoin."
+
+
 
 session_config:
   session_expiration_time: 60

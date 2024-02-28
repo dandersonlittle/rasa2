@@ -7,11 +7,6 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-
 - rule: Provide Bitcoin price
   steps:
   - intent: get_bitcoin_price  
@@ -19,5 +14,20 @@ rules:
 
 - rule: Get Bitcoin exchange volume
   steps:
-  - intent: get_exchange_volume  # This assumes you have a general intent for getting exchange volumes
+  - intent: get_bitcoin_exchange_volume 
   - action: action_get_bitcoin_exchange_volume
+
+- rule: Respond to inquiry about Crown
+  steps:
+    - intent: ask_about_crown
+    - action: utter_about_crown
+
+- rule: Respond to inquiry about Pandora
+  steps:
+    - intent: ask_about_pandora
+    - action: utter_about_pandora
+
+- rule: Respond to inquiry about Trac
+  steps:
+    - intent: ask_about_trac
+    - action: utter_about_trac

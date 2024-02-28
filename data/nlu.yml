@@ -30,34 +30,37 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
+- intent: ask_about_crown
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Tell me about Crown
+    - What is Crown?
+    - I want to know about Crown
+    - Explain Crown
+    - Details about Crown
 
-- intent: deny
+- intent: ask_about_pandora
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Tell me about Pandora
+    - What is Pandora?
+    - I want to know about Pandora
+    - Explain Pandora
+    - Details about Pandora
 
-
+- intent: ask_about_trac
+  examples: |
+    - Tell me about Trac
+    - What is Trac?
+    - I want to know about Trac
+    - Explain Trac
+    - Details about Trac
 
 - intent: get_bitcoin_price
   examples: |
     - what is the price of bitcoin?
     - tell me the price of bitcoin
 
-- intent: get_exchange_volume
+- intent: get_bitcoin_exchange_volume
   examples: |
     - Show top exchanges for Bitcoin
-    - Where is Ethereum traded the most?
-    - Get top exchanges by volume for Litecoin
+    - Get top exchanges by volume for Bitcoin
+    - Where is Bitcoin traded the most?

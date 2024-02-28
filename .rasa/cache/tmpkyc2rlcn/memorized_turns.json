@@ -1,0 +1,7 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkPimzJDk/My++oCgzObW2NhYAUiogZw==": "action_get_bitcoin_price",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkPimzJDk/My++oCgzObWWOPMw9RFjdCwAELtDhw==": "action_listen"
+  }
+}
