@@ -60,8 +60,10 @@ class ActionGetCrownExchangeVolume(Action):
         
         if 'tickers' in data:
             exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            sorted_exchanges = sorted(exchanges, key=lambda x: x['converted_volume']['usd'] if 'usd' in x['converted_volume'] else 0, reverse=True)
+
             message = "Top exchanges for Crown by volume: \n"
-            for exchange in exchanges:
+            for exchange in sorted_exchanges:
                 message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
         else:
             message = "Sorry, couldn't fetch Crown data."
@@ -80,8 +82,10 @@ class ActionGetPandoraExchangeVolume(Action):
         
         if 'tickers' in data:
             exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            sorted_exchanges = sorted(exchanges, key=lambda x: x['converted_volume']['usd'] if 'usd' in x['converted_volume'] else 0, reverse=True)
+
             message = "Top exchanges for Pandora by volume: \n"
-            for exchange in exchanges:
+            for exchange in sorted_exchanges:
                 message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
         else:
             message = "Sorry, couldn't fetch Pandora data."
@@ -100,8 +104,9 @@ class ActionGetTracExchangeVolume(Action):
         
         if 'tickers' in data:
             exchanges = data['tickers'][:10]  # Get top 10 exchanges
+            sorted_exchanges = sorted(exchanges, key=lambda x: x['converted_volume']['usd'] if 'usd' in x['converted_volume'] else 0, reverse=True)
             message = "Top exchanges for Trac by volume: \n"
-            for exchange in exchanges:
+            for exchange in sorted_exchanges:
                 message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
         else:
             message = "Sorry, couldn't fetch Trac data."
