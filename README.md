@@ -1,3 +1,14 @@
+Summary:
+
+“Onboarding to Crypto Chatbot”
+
+* The user can ask about how to get started in crypto.
+* The chatbot tells the user about three promising and unique crypto coins in February 2024. The user has to ask by name to be told a summary about the coins. 
+* The user can ask which marketplaces are currently performing the most volume for each of the three coins.
+* The user can ask for a guide of how to buy each of these coins. 
+* The chatbot also can tell you the live price of bitcoin and bitcoin’s top exchanges.
+
+
 Solutions to known issues:
 * Adding to stories.yml instead of just rules.yml.
 * Implementing standardized coding conventions instead of such repetitive code.
