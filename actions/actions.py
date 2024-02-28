@@ -30,6 +30,7 @@
 # Import necessary modules
 from rasa_sdk import Action
 from rasa_sdk.events import SlotSet
+from rasa_sdk.executor import CollectingDispatcher
 import requests
 
 class ActionGetBitcoinPrice(Action):
@@ -56,3 +57,23 @@ class ActionGetBitcoinPrice(Action):
 
         # Optionally, you can set a slot with the Bitcoin price if you want to use it later
         return [SlotSet("bitcoin_price", bitcoin_price)]
+
+class ActionGetBitcoinExchangeVolume(Action):
+    def name(self):
+        return "action_get_bitcoin_exchange_volume"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker, domain):
+        url = f"https://api.coingecko.com/api/v3/coins/bitcoin/tickers?order=volume_desc"
+        response = requests.get(url)
+        data = response.json()
+        
+        if 'tickers' in data:
+            exchanges = data['tickers'][:10]  # Get top 5 exchanges
+            message = "Top exchanges for Bitcoin by volume: \n"
+            for exchange in exchanges:
+                message += f"{exchange['market']['name']} - Volume: {exchange['converted_volume']['usd']} USD\n"
+        else:
+            message = "Sorry, couldn't fetch Bitcoin data."
+        
+        dispatcher.utter_message(text=message)
+        return []

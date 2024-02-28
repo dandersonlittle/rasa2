@@ -16,3 +16,8 @@ rules:
   steps:
   - intent: get_bitcoin_price  
   - action: action_get_bitcoin_price
+
+- rule: Get Bitcoin exchange volume
+  steps:
+  - intent: get_exchange_volume  # This assumes you have a general intent for getting exchange volumes
+  - action: action_get_bitcoin_exchange_volume

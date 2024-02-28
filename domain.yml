@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - get_bitcoin_price
+  - get_exchange_volume
 
 responses:
   utter_greet:
@@ -36,6 +37,7 @@ session_config:
 
 actions:
 - action_get_bitcoin_price
+- action_get_bitcoin_exchange_volume
 
 
 slots:
